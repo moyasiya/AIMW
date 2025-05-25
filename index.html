@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>AIMW - 조류독감 감염 지도</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <h2>🦠 H5N1 감염 현황 모니터링</h2>
+
+  <div id="slider-container">
+    <label> 시작일:
+      <input type="range" id="startSlider" />
+    </label>
+    <label> 종료일:
+      <input type="range" id="endSlider" />
+    </label>
+    <p><b>선택된 날짜:</b> <span id="dateRangeLabel"></span></p>
+  </div>
+
+  <div id="map"></div>
+  <div id="caseList"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
